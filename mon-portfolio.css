@@ -1,0 +1,466 @@
+* {
+    --backg-beige: rgb(246, 246, 248);
+    --theme-beige: rgb(238, 212, 192);
+    --backg-dark: #041530;
+    --theme-blue: #0e0e45;
+    --white-text:  #fff;
+    --black-text: #000;
+    --section-color-dark: rgb(22, 197, 255);
+    --section-color-light: #ac9035;
+}
+
+html {
+    font-size: 16px; 
+    scroll-behavior: smooth;
+}
+body, html { 
+    width: 100%;
+    height: 100%;
+    background-color: var(--backg-beige); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+      
+} 
+
+p, a, h1, h2, h3 {
+    color: var(--black-text)
+}
+
+h4 {
+    color:var(--section-color-light)
+}
+
+
+header { 
+    position: fixed;  
+    top: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%; 
+    background-color: var(--theme-beige);
+    font-size: 1.1rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+}
+
+ a {
+    text-decoration: none;
+    margin: 5px;
+}  
+ 
+header a:hover {  
+    border-right:  1.5px solid black;  
+    border-bottom:  2px solid black;  
+    padding: 2px;
+    transition: border 0.1s linear;
+}
+ 
+
+
+section { 
+    height: 100vh;
+    border: 2px solid transparent;
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+
+
+#presentation {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 160px auto 0;
+    flex-wrap: wrap;
+
+    
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+#presentation p {
+    font-size: 18px;
+}
+
+
+#presentation .text {
+    margin-right: 10vw;
+
+}
+#presentation img {
+    margin-left: -20%;
+    width: 25%;
+    height: 25%;
+    border-radius: 90%;
+}
+
+#presentation i { 
+    font-size: 1.5rem
+}
+
+#tech-stack {
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+#tech-stack ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ 
+#tech-stack ul > li {
+    margin-right: 30px;
+    font-size: 2rem;
+}
+
+
+#presentation img {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation-name: blobby;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border: 2px solid var(--theme-beige)
+
+  }
+  
+  @keyframes blobby {
+    0% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    100% {
+      border-radius: 68% 32% 42% 58% / 53% 56% 44% 47%;
+    }
+  }
+
+
+/* A PROPOS SECTION */
+
+.apropos {
+    margin: 13% auto;
+    /* border: 2px black solid; */
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%
+
+  }
+#a-propos img {
+    width: 30%;
+    border-radius: 15px;
+    margin-right: -70px;  
+    margin-top: -20px;
+}
+.apropos-text > h4, .apropos-text > h3 {
+    margin-bottom: -12px;
+}
+
+.background-effect { 
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: var(--theme-beige);
+    z-index: -1; 
+    top: 117%;
+    border-radius: 50px 50%;
+}
+
+
+/*  PROJECTS SECTION */
+
+.project-img {
+    transition: transform 0.3s ease; 
+  }
+   
+  .project-img:hover {
+    transform: translateX(10px) translateY(2px);  
+  }
+
+#projets {
+    height: fit-content
+}
+
+#projets h2 {
+    margin-top: 7%;
+    margin-bottom: 50px;
+    margin-left: 10%;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    margin: 20px; 
+    justify-content: space-around;
+ 
+}
+
+.project-text {
+    margin-top: -17px;
+}
+
+.project ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: left;
+    list-style: none;
+    margin-left: -39px;
+    color: black
+}
+
+.projects h4 {
+    color: black
+}
+
+.project i, #presentation i {
+    font-size: 1.5rem;
+}
+.githubIcon, #presentation i { 
+    transition: font-size 0.3s ease;
+    margin-right: 5px 
+} 
+.githubIcon:hover, #presentation i:hover {
+    font-size: 2rem 
+}
+
+.projects {
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.project-img {
+    width: 400px; 
+    border-radius: 10px;
+    margin-right: 20px;
+} 
+
+
+
+/* CONTACT FORM */
+
+
+
+form {
+    background-color: var(--theme-beige);
+    display: flex;
+    flex-direction: column;
+    padding: 1.3vw 1.3vw;
+    width: 41%;
+    max-width: 600px;
+    border-radius: 190px 10px;
+    margin: 6% auto 0; 
+} 
+
+form h4 { 
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 5px auto;
+    outline: none;
+    padding: 10px;
+    background-color: var(--backg-beige);
+    font-size: 16px;
+    border-radius: 10px;
+    width: 60%;
+    resize: none; 
+} 
+
+
+
+form button {
+    padding: 15px;
+    width: fit-content;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px auto 0;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--backg-beige);
+}
+
+form button:hover {
+    background-color: rgb(255, 246, 233);
+    cursor: pointer
+}
+
+
+
+
+
+
+@media (max-width: 550px) {
+    br {
+        display: none;
+    } 
+
+    section {
+        width: 90vh;
+        padding: 40px;
+        height: 1500px;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    #presentation {
+        width: 90vh;
+        margin-top: 50px; 
+    } 
+
+    #presentation .text {
+        margin: 70px 10px;
+    } 
+    #presentation img {
+        margin: 0 auto;
+        width: 45% 
+    }
+    
+    header {
+        width: 97vh; 
+        position: fixed;
+        top: 0;
+        height: 70px
+    }
+
+    #tech-stack {
+        display: flex;
+        text-align: center;
+        width: 100%;
+
+    }
+    .background-effect {
+        display: none;
+    }
+    #a-propos img {
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .project {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-form {
+        width: 100%;
+        height: 60%; 
+        background-color: var(--theme-beige);
+        border-radius: 30px;
+    }
+    form {
+        width: 90%;
+        height: fit-content;
+        margin-top: 200px;  
+        padding-top: 110px;
+        background-color: transparent;
+    }
+
+    form h4 { 
+        margin-top: 30px;
+    }
+
+    form input, form textarea {
+        margin-top: 15px;
+        width: 80%;
+    }
+ 
+}
+
+@media (min-width: 551px) and (max-width: 1045px) { 
+    br { 
+        display: none;
+    }
+ 
+    #presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 100px auto;  
+    }
+    #presentation img {
+        width: 30%;
+        margin: 20px 30% ; 
+
+    } 
+    #presentation .text  {
+        margin-left: 10%; 
+    } 
+    #a-propos img {
+        width: 40%;  
+        margin: 0;
+        margin-top: 10%; 
+    }
+    .a-propos {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+    }
+    #a-propos .a-propos-text {
+        margin: 0 50%;
+    }
+    .background-effect { 
+     display: none; 
+    }
+    #projets h2 {
+       margin-top: 120px;
+    }
+    .projects, .project { 
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submit-btn {
+        width: 150px
+    }
+    .container-form {
+        margin-top: 20%;
+    } 
+    form {
+        width: 80% 
+    }
+}

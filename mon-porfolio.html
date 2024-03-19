@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belinda Portfolio</title>
+    <link rel="stylesheet" href="mon-portfolio.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  </head>
+  <body>
+    <header>
+        <a class="inline" href="#menu">Belinda Z</a>
+        <nav>
+            <ul class="inline">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section id="menu">
+        <div id="presentation">
+          <div class="text">
+          <h1>Front-end React <br> Developer👋</h1>
+          <p>Hello, je suis Belinda Zilevu. Une Développeuse passionée <br>Front-end React située à Nantes, France.📍
+          </p>  
+         <a href="https://github.com/Codeuzz" target="_blank"><i class="devicon-github-original colored githubIcon"></i></a>
+         <a href="https://www.linkedin.com/in/belinda-zilevu/" target="_blank"><i class="devicon-linkedin-plain colored githubIcon"></i></a>
+         
+          
+          </div>
+          <img src="Cropped_Image.png">
+          
+        </div>
+        <div id="tech-stack">
+          <p>Tech Stack |</p>
+          <ul class="stack-logos"> 
+            <li><i class="devicon-html5-plain colored"></i></li>
+            <li><i class="devicon-css3-plain colored"></i></li>
+            <li><i class="devicon-javascript-plain colored"></i></li>
+            <li><i class="devicon-react-original colored"></i></li>
+            <li>
+              <i class="devicon-redux-original colored"></i>
+            </li>
+            <li><i class="devicon-bootstrap-plain colored"></i></li>
+            <li><i class="devicon-sass-original colored"></i></li>
+          </ul>
+        </div>
+
+      </section>
+
+
+      <section id="a-propos">
+        <div class="apropos">
+          <div class="background-effect"></div>
+          <img src="coffecomputa.jpg">
+          <div class="apropos-text">
+            <h4>À propos</h4>
+            <h3>Une Développeuse Joyeuse Basée à Nantes📍</h3>
+            <p>
+               En tant que développeuse auto-didacte, je sais me<br> 
+               documenter et recherche constamment à en <br>
+               plus sur le développement Web. Je possède de bonnes<br>
+               aptitudes en HTML, CSS, Javascript, React, Redux,<br>
+               Bootstrap et SCSS.  Je suis qualifiée dans le design <br>
+               et le maintien de sites résponsifs qui offrent <br>une expérience fluide aux utilisateurs.<br><br>
+               <i class="fa-solid fa-bullseye" style="color: #ff0019;"></i>
+               Mes objectifs principaux sont de m'améliorer<br> en front-end et débuter en back-end.
+            </p>
+          </div>
+        </div>
+      </section>
+
+ 
+      <section id="projets"> 
+        <h2>Quelques projets :</h2>
+        <div class="projects">
+          <div class="project">
+            <a><img class="project-img" src="project phone validator.png"></a>
+              <div class="project-text">
+                <h3>Telephone Number Validator</h3>
+                <p>Ce mini projet permet de vérifier si un numéro de téléphone est conforme à la norme aux Etats Unis.</p>
+                <h4> 
+                  <ul class="project-languages"> 
+                    <li><i class="devicon-html5-plain colored"></i></li>
+                   <li><i class="devicon-css3-plain colored"></i></li> 
+                   <li><i class="devicon-javascript-plain colored"></i></li> 
+                  </ul> 
+                  <a href="https://github.com/Codeuzz/Telephone-number-validator" target="_blank">Code <i class="devicon-github-original colored githubIcon"></i></a>
+                  <a href="https://codeuzz.github.io/Telephone-number-validator/" target="_blank">Live Preview <i class="fa-solid fa-arrow-up-right-from-square githubIcon"></i></a>
+                </h4>
+              </div>
+            
+          </div>
+          <div class="project">
+            <a><img class="project-img" src="project pokedex.png"></a>
+              <div class="project-text"> 
+                <h3>Pokemon Finder</h3> 
+                <p>J'ai appris l'utilisation de l'API fetch à travers ce mini projet. Il permet de trouver un pokémon et de connaître ses statistiques grâce à son son nom our ID.</p>
+                <h4>  
+                  <ul class="project-languages"> 
+                  <li><i class="devicon-html5-plain colored"></i></li>
+                  <li><i class="devicon-css3-plain colored"></i></li>
+                  <li><i class="devicon-javascript-plain colored"></i></li>
+                  </ul> 
+                  <a href="https://github.com/Codeuzz/Pokedex" target="_blank">Code <i class="devicon-github-original colored githubIcon"></i></a>
+                  <a href="https://codeuzz.github.io/Pokedex/" target="_blank">Live Preview <i class="fa-solid fa-arrow-up-right-from-square githubIcon"></i></a>
+                  
+                </h4>
+              </div>
+          </div> 
+        </div>
+      </section>
+ 
+
+      <section id="contact">
+        <div class="container-form">
+          <form action="https://api.web3forms.com/submit" method="POST"> 
+            <h4>Contactez-moi</h4>
+            <input type="hidden" name="access_key" value="853b1f5e-d885-4a45-8e68-5d53c29434ac">
+            <input type="text" name="nom" id="nom" placeholder="Nom" required>
+            <input type="text" name="prénom" id="prenom" placeholder="Prénom" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="text"  name="téléphone" id="téléphone" placeholder="téléphone" required>
+            <textarea name="message" id="message" rows="7" placeholder="Entrez votre message..."></textarea>
+            <button id="submit-btn" type="submit">Envoyer</button>
+          </form>
+        </div.container>
+      </section>
+
+
+    </main>
+
+    <footer></footer>
+	<script src="mon-porfolio.js"></script>
+  <script src="https://kit.fontawesome.com/1a928976cd.js" crossorigin="anonymous"></script>
+  </body>
+</html>
