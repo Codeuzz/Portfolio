@@ -7,6 +7,7 @@
     --black-text: #000;
     --section-color-dark: rgb(22, 197, 255);
     --section-color-light: #ac9035;
+    --white-white: rgb(250, 250, 250);
 }
 
 html {
@@ -44,7 +45,7 @@ header {
     box-sizing: border-box;
     padding: 5px;
     width: 100%; 
-    background-color: var(--theme-beige);
+    background-color: rgb(250, 250, 250);
     font-size: 1.1rem;
 }
 
@@ -148,7 +149,7 @@ h1 {
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    border: 2px solid var(--theme-beige)
+    border: 2px solid black
 
   }
   
@@ -188,7 +189,7 @@ h1 {
     position: absolute;
     height: 80%;
     width: 80%;
-    background-color: var(--theme-beige);
+    background-color: var(--white-white);
     z-index: -1; 
     top: 117%;
     border-radius: 50px 50%;
@@ -271,17 +272,22 @@ h1 {
 
 /* CONTACT FORM */
 
-
+#contact {
+    background: linear-gradient(var(--backg-beige), rgb(112, 112, 112));
+    border: none;
+    padding: 20px
+}
 
 form {
-    background-color: var(--theme-beige);
     display: flex;
     flex-direction: column;
-    padding: 1.3vw 1.3vw;
+    padding: 1.1vw 1.1vw;
     width: 41%;
     max-width: 600px;
-    border-radius: 190px 10px;
+    border: 2px solid black;
     margin: 6% auto 0; 
+    background-color: rgb(56, 56, 56);
+    border-radius: 20%;
 } 
 
 form h4 { 
@@ -289,6 +295,7 @@ form h4 {
     margin-bottom: 20px;
     text-align: center;
     font-size: 1.3em;
+    color: white;
 }
 
 form input, form textarea {
@@ -327,6 +334,7 @@ form button:hover {
 
 
 @media (max-width: 550px) {
+
     br {
         display: none;
     } 
@@ -384,18 +392,19 @@ form button:hover {
         text-align: center;
     }
 
+
     .container-form {
         width: 100%;
         height: 60%; 
-        background-color: var(--theme-beige);
         border-radius: 30px;
+        margin: 0 auto;
     }
     form {
-        width: 90%;
+        width: 100%;
         height: fit-content;
-        margin-top: 200px;  
-        padding-top: 110px;
-        background-color: transparent;
+        background-color: rgb(56, 56, 56);
+        margin: 0 auto;
+
     }
 
     form h4 { 
